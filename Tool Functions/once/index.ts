@@ -23,6 +23,7 @@ class Once {
     }
 }
 
+// 测试test
 const once = new Once()
 
 const once1 = once.once(function (str: string) {
@@ -47,7 +48,6 @@ const once3 = once.once(function (str: string) {
 const once4 = once.once(function (str: string) {
     return `${str}---once4`
 })
-
 
 console.log(once3('once3调用')) // once3调用---once4
 
@@ -90,15 +90,17 @@ class Once2 {
     }
 }
 
+// 测试test
+
 const newonce = new Once2()
 
 const newonce1 = newonce.once('new1', function (str: string) {
     console.log(str)
 })
 
-newonce1('new1', '第一次调用')
+newonce1('new1', '第一次调用的结果')
 
-newonce1('new1', '第二次调用')
+newonce1('new1', '第二次调用的结果')
 
 const newonce2 = newonce.once('new2', function (str: string) {
     return `${str}---返回结果`
@@ -116,8 +118,14 @@ const newonce4 = newonce.once('new4', function (str: string) {
 })
 
 
-console.log(newonce3('new3', 'once3调用'))
+console.log(newonce3('new3', 'once3第一次调用的结果'))
 
-console.log(newonce4('new4', 'once4调用'))
+console.log(newonce4('new4', 'once4第一次调用的结果'))
+
+console.log('\n---下面是二次调用once3，once4---\n')
+
+console.log(newonce3('new3', 'once3第二次调用'))
+
+console.log(newonce4('new4', 'once4第二次调用'))
 
 // 这样就不会出现上面的情况了
