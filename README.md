@@ -4,6 +4,7 @@
 ##### 工具函数(Tool Functions)
 
 - once
+- sleep/delay
 
 ##### 内置函数(Built in functions)
 
