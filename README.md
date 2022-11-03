@@ -5,6 +5,7 @@
 
 - once
 - sleep/delay
+- debounce/throttle
 
 ##### 内置函数(Built in functions)
 
