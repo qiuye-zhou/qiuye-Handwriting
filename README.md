@@ -6,6 +6,7 @@
 - once
 - sleep/delay
 - debounce/throttle
+- compose/pipe
 
 ##### 内置函数(Built in functions)
 
