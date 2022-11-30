@@ -8,7 +8,9 @@
 - debounce/throttle
 - compose/pipe
 
-##### 内置函数(Built in functions)
+##### 内置函数功能模拟(Built in functions)
+
+- new
 
 
 ##### 简单算法(Simple algorithm)
