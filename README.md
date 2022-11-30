@@ -16,3 +16,7 @@
 ##### 简单算法(Simple algorithm)
 
 - 数组交集，并集，差集 (Array intersection, union, subtraction)
+
+##### 一些小知识(Little knowledge)
+
+- 继承
